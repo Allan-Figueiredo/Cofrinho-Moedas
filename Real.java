@@ -1,4 +1,4 @@
-// Utilizando herança Real(classe filha) extende Moeda(Classe mãe)
+
 public class Real extends Moeda {
 	
 	
@@ -20,14 +20,14 @@ public class Real extends Moeda {
 		
 		
 	}
-	//Compatativo de classes
+
 	@Override
 	public boolean equals(Object o){
 		if (this.getClass()!= o.getClass()) {
 			return false;
 		}
 		
-		//Cast
+
 		
 		Real objetoReal = (Real) o;
 		
