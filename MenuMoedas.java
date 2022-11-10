@@ -6,13 +6,13 @@ public class MenuMoedas {
 	private Cofrinho cofrinho;
 	
 	public MenuMoedas( ) {
-		//Scanner para inserir
+
 		sc = new Scanner(System.in);
 		cofrinho = new Cofrinho();
 	}
 	
 	public void ExibirMenuMoedas( ) {
-		//Menu Cofrinho do programa
+
 		System.out.println("---Menu cofrinho---");
 		System.out.println("1-Adicionar moedas");
 		System.out.println("2-Remover moedas");
@@ -27,7 +27,7 @@ public class MenuMoedas {
 		case"0":
 			System.out.println("Fim do sistema");
 		   break;
-		 // Cada case representa um número do Menu  
+  
 		case"1":
 			exibirMenuAdcionarMoedas();
 			ExibirMenuMoedas();
@@ -43,7 +43,7 @@ public class MenuMoedas {
 			cofrinho.listagemMoedas();
 			ExibirMenuMoedas();
 	     	break;
-	    //Tratamento de "." para "," 	
+	
 		case "4":
 			double valorTotalConvertido = cofrinho.totalConvertido();
 			String valorTotalConvertidoText = String.valueOf(valorTotalConvertido);
@@ -87,7 +87,7 @@ public class MenuMoedas {
 			System.out.println("Não existe essa moeda ");
 			ExibirMenuMoedas();
 		}
-		//Adicionando Moeda ao Cofrinho
+
 		cofrinho.adicionar(moeda);
 		System.out.println("Moeda inserida ");
 	}
@@ -118,7 +118,7 @@ public class MenuMoedas {
 			System.out.println("Não existe essa moeda ");
 			ExibirMenuMoedas();
 		}
-		//Removendo Moeda do Cofrinho com retorno
+
 		boolean removerMoeda = cofrinho.remover(moeda);
 		
 		if(removerMoeda){
